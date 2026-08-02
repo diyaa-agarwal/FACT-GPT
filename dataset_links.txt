@@ -1,0 +1,72 @@
+# Dataset & Model Links — WhatsApp Fact-Check Bot v2
+
+## Pre-trained Models (downloaded automatically via HuggingFace)
+
+NLI (Stance Detection):
+  https://huggingface.co/roberta-large-mnli
+  - License: MIT
+  - No registration required; downloads automatically on first run
+
+Translation (Hindi/Bengali/Hinglish → English):
+  https://huggingface.co/facebook/nllb-200-distilled-1.3B
+  - License: CC-BY-NC 4.0
+  - ~2.7 GB download; cached in ~/.cache/huggingface/
+
+Sentence Embeddings (Semantic Retrieval):
+  https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
+  - License: Apache 2.0
+  - ~90 MB download
+
+Emotion Detection:
+  https://huggingface.co/SamLowe/roberta-base-go_emotions
+  - License: Apache 2.0
+  - Fine-tuned on the GoEmotions dataset
+
+LLM (Optional, requires API key):
+  https://aistudio.google.com/  (Gemini API)
+  - Model: gemini-2.5-flash
+  - Free tier available; requires GEMINI_API_KEY
+
+## Reference Datasets (used for inspiration / evaluation design)
+
+LIAR Dataset (fake news detection benchmark):
+  https://huggingface.co/datasets/liar
+  - 12.8K manually labeled short statements
+
+FakeNewsNet:
+  https://github.com/KaiDMML/FakeNewsNet
+  - PolitiFact + GossipCop labeled articles
+
+FEVER (Fact Extraction and VERification):
+  https://fever.ai/dataset/fever.html
+  - 185K claims vs Wikipedia evidence
+
+GoEmotions (emotion fine-tuning):
+  https://huggingface.co/datasets/go_emotions
+  - 58K Reddit comments with 27 emotion labels
+
+AltNews Indian Fact-Checks:
+  https://www.altnews.in/
+  - No bulk download; accessed live via web search at inference time
+
+BoomLive India:
+  https://www.boomlive.in/
+  - No bulk download; accessed live via web search at inference time
+
+## APIs & Services
+
+Twilio WhatsApp Sandbox (free for testing):
+  https://console.twilio.com → Messaging → Try it out → Send a WhatsApp message
+  - Requires registration; sandbox number: whatsapp:+14155238886
+
+ngrok (public tunnel for webhook):
+  https://dashboard.ngrok.com
+  - Free tier allows 1 active tunnel; requires NGROK_AUTH_TOKEN
+
+DuckDuckGo Search (no API key required):
+  https://pypi.org/project/ddgs/
+  - Rate limits apply; free for non-commercial use
+
+Wikipedia API:
+  https://pypi.org/project/wikipedia/
+  - No API key required; rate limits apply

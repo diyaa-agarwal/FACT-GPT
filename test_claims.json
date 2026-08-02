@@ -1,0 +1,82 @@
+[
+  {
+    "id": "test_001",
+    "claim": "Drinking cow urine cures COVID-19",
+    "true_verdict": "refuted",
+    "category": "health",
+    "language": "english",
+    "notes": "Common Indian WhatsApp misinformation. WHO explicitly debunked this."
+  },
+  {
+    "id": "test_002",
+    "claim": "India launched Chandrayaan-3 to the Moon in 2023",
+    "true_verdict": "supported",
+    "category": "science",
+    "language": "english",
+    "notes": "ISRO successfully landed on Moon on 23 August 2023. Well documented."
+  },
+  {
+    "id": "test_003",
+    "claim": "5G towers spread coronavirus",
+    "true_verdict": "refuted",
+    "category": "technology",
+    "language": "english",
+    "notes": "Global misinformation. Viruses cannot travel on radio waves."
+  },
+  {
+    "id": "test_004",
+    "claim": "Gukesh is the world champion of classical chess",
+    "true_verdict": "supported",
+    "category": "sports",
+    "language": "english",
+    "notes": "Gukesh Dommaraju defeated Ding Liren in Dec 2024 to become World Chess Champion."
+  },
+  {
+    "id": "test_005",
+    "claim": "Rahul Gandhi is the Prime Minister of India",
+    "true_verdict": "refuted",
+    "category": "politics",
+    "language": "english",
+    "notes": "Narendra Modi is the current PM. Tests alias + political fact-check."
+  },
+  {
+    "id": "test_006",
+    "claim": "COVID-19 vaccines contain microchips",
+    "true_verdict": "refuted",
+    "category": "health",
+    "language": "english",
+    "notes": "Widely circulated conspiracy theory. No scientific basis."
+  },
+  {
+    "id": "test_007",
+    "claim": "India is the most populous country in the world",
+    "true_verdict": "supported",
+    "category": "demographics",
+    "language": "english",
+    "notes": "India surpassed China in 2023 per UN data."
+  },
+  {
+    "id": "test_008",
+    "claim": "Modiji ne COVID vaccine band ki",
+    "true_verdict": "refuted",
+    "category": "health",
+    "language": "hinglish",
+    "notes": "Hinglish input test. Translates to 'Modi banned COVID vaccine'. Tests multilingual pipeline."
+  },
+  {
+    "id": "test_009",
+    "claim": "Chandrayaan-2 successfully landed on the Moon",
+    "true_verdict": "refuted",
+    "category": "science",
+    "language": "english",
+    "notes": "Chandrayaan-2 lander crashed. Only orbiter survived. Tests near-true claim distinction."
+  },
+  {
+    "id": "test_010",
+    "claim": "The Earth is flat",
+    "true_verdict": "refuted",
+    "category": "science",
+    "language": "english",
+    "notes": "Classic misinformation. Strong evidence expected from Wikipedia."
+  }
+]
